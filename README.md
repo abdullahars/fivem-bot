@@ -1,5 +1,5 @@
 # SORUNUZ OLURSA DİSCORD: apozinyo
-# 50 star a tam donanımlı guardı da veririm
+# 50 tane star gelirse tam korumları rol backup da bulunan guardı paylaşırım
 
 # 🎮 FiveM Discord Yönetim Botu
 
