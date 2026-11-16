@@ -1,0 +1,20 @@
+module.exports = {
+  noPermission: '❌ Bu işlem için yetkiniz yok.',
+  noBotCommand: '❌ Bu komut için Bot Command yetkisine ihtiyacınız var.',
+  notTicketChannel: '❌ Bu kanal bir ticket kanalı değil.',
+  invalidTicketType: '❌ Geçersiz ticket tipi.',
+  alreadyHasTicket: "❌ Zaten açık bir ticket'ınız var: {channel}",
+  ticketCreated: "✅ Ticket'ınız oluşturuldu: {channel}",
+  claimed: '✅ {staff} ticket ile ilgilenmeye başladı.',
+  alreadyClaimed: '❌ Bu ticket zaten {staff} tarafından ilgileniliyor.',
+  closed: '🔒 Ticket {staff} tarafından kapatıldı.',
+  transferred: '🔄 Ticket {oldStaff} → {newStaff} devredildi.',
+  memberAdded: "➕ {member} ticket'a eklendi.",
+  panelSent: '✅ Ticket paneli gönderildi.',
+  adminOnly: '❌ Bu komutu kullanmak için yönetici yetkisine ihtiyacınız var.',
+  interactionError: '❌ Bir hata oluştu. Lütfen tekrar deneyin.',
+  transferPrompt: '🔄 Devretmek istediğiniz staff üyesini seçin:',
+  addMemberPrompt: "➕ Ticket'a eklenecek üyeyi seçin:",
+  ticketOpenNotify:
+    "ticket'ınız oluşturuldu. Yetkili ekip en kısa sürede ilgilenecektir.",
+};

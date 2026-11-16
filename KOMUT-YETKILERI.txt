@@ -1,0 +1,141 @@
+================================================================================
+  ROTekAV BOT — KOMUT YETKİLERİ
+  (config.js → ids.roles; Discord Administrator her zaman kullanabilir)
+================================================================================
+
+ROL AÇIKLAMALARI
+----------------
+  Staff           → staffRole
+  Bot Command     → botCommandRole
+  Banhammer       → banhammerRole
+  Üst Yönetim     → ustYonetimRole
+  Ekip Sorumlusu  → ekipSorumlusuRole
+
+  ManageRoles     → Discord “Rolleri Yönet” izni (/rol için Bot Command ile birlikte yeterli)
+
+
+--------------------------------------------------------------------------------
+SLASH KOMUTLAR — Kim kullanır?
+--------------------------------------------------------------------------------
+
+Komut                  | Kim kullanır?
+-----------------------|----------------------------------------------
+/ip                    | Herkes
+/avatar                | Herkes
+/banner                | Herkes
+/say                   | Bot Command
+/top-stat              | Bot Command
+/stat                  | Staff
+/whitelist             | Staff
+/kayitsiz              | Bot Command
+/rolsuz ver            | Üst Yönetim
+/toplu-sustur          | Bot Command
+/toplu-sustur-ac       | Bot Command
+/rollog                | Bot Command
+/rolbilgi              | Bot Command
+/rol ver               | Bot Command veya ManageRoles
+/rol al                | Bot Command veya ManageRoles
+/toplu-rol ver         | Bot Command veya ManageRoles
+/toplu-rol al          | Bot Command veya ManageRoles
+/ban                   | Banhammer
+/unban                 | Banhammer
+/blacklist             | Banhammer
+/unblacklist           | Banhammer
+/blacklist-bilgi       | Staff
+/ban-bilgi             | Staff
+/kullanici-bilgi       | Staff
+/sicil                 | Staff
+/ceza-ekle             | Staff
+/destek                | Staff
+/ysay                  | Bot Command
+/sil                   | Bot Command + Üst Yönetim
+/kilit                 | Üst Yönetim (tekrar = kilidi aç)
+/cekilis               | Üst Yönetim (katılım butonu: Herkes)
+/streamer              | Streamer rolü (config.js → streamer)
+/meslek                | config.js → meslek.allowedRoleIds
+/changelog             | Üst Yönetim
+/oylama                | Oluşturma: Bot Command + Üst Yönetim
+                       | Oy verme (buton): Herkes
+/mulakat-panel-kur     | Üst Yönetim
+/ekipler               | Bot Command + Ekip Sorumlusu
+/ekip bilgi            | Staff
+                       | Kapat / Yardım / Boss: config ekipOlustur.allowedRoleIds
+                       | Üye ekle / ID topla: Staff
+/ekip olustur          | config ekipOlustur.allowedRoleIds
+/ekip kapat            | config ekipOlustur.allowedRoleIds
+/aktif                 | Üst Yönetim
+/bakim                 | Üst Yönetim
+/restart               | Üst Yönetim
+/staff-top             | Üst Yönetim
+/staff-bilgi           | Üst Yönetim
+/kurulum               | Üst Yönetim
+/blroller              | Üst Yönetim (panel: BL rol + muaf rol yönetimi)
+/ticket-panel          | Yönetici (Discord Administrator)
+/ekip-ticket-panel     | Yönetici (Discord Administrator)
+
+
+--------------------------------------------------------------------------------
+SAĞ TIK MENÜ — Kim kullanır?
+--------------------------------------------------------------------------------
+
+Menü adı          | Kim kullanır?
+------------------|----------------------------------------------
+Whitelist Ekle    | Staff
+Rol Ekle          | Bot Command veya ManageRoles
+Rol Al            | Bot Command veya ManageRoles
+
+
+--------------------------------------------------------------------------------
+PANEL / BUTON ETKİLEŞİMLERİ (komut değil)
+--------------------------------------------------------------------------------
+
+Etkileşim              | Kim kullanır?
+-----------------------|----------------------------------------------
+Çekiliş Katıl / Katılanları Gör | Herkes
+Changelog paneli       | Üst Yönetim
+Stat sekmeleri         | Staff
+WL onay / red butonları| Staff
+IC isim onay / red     | Staff
+Ban-bilgi unban butonu | Banhammer
+Oylama Evet / Hayır    | Herkes (süre dolana kadar)
+
+
+--------------------------------------------------------------------------------
+EK NOTLAR
+--------------------------------------------------------------------------------
+
+• /blroller ile kara listeye alınan roller: /rol, /toplu-rol ve sağ tık Rol Ekle/Al
+  ile normalde verilemez/alınamaz. Muaf roller tanımlanırsa, o role sahip üyeler
+  seçilen BL rolleri yönetebilir. Üst yönetim her zaman muaf.
+  ile verilemez/alınamaz. Üst Yönetim bu kısıtlamadan muaftır.
+
+• /rolbilgi içindeki toplu ban işlemi: Banhammer.
+
+• /changelog: Üst Yönetim panelden kişi seçer, not yazar; sürüm otomatik artar.
+
+• /oylama: buton1 ve buton2 ile seçenek isimleri özelleştirilebilir.
+
+• /say: Toplam üye, whitelist, kayıtsız ve URL (özel URL + davet) kullanımı gösterir.
+
+• /sil: Verilen sayı kadar son mesajı siler (max 500; 14 günden eski mesajlar silinemez).
+
+• /kilit: Kanal izinlerini kaydeder, yazmayı kapatır; tekrar kullanınca izinleri eski haline getirir.
+
+• /cekilis: Kazanan + aynı sayıda yedek çeker; süre bitince sonuçlar panelde gösterilir.
+
+• Ticket / ekip ticket panelleri: Yönetici komutu; panel kanalları config.js içinde.
+
+• Günlük özet: Her gece 00:00 (İstanbul) #gunluk-log kanalına otomatik rapor.
+  Kanal /kurulum ile oluşturulur (isim: gunluk-log).
+
+
+--------------------------------------------------------------------------------
+ÇİFT KOMUT GÖRÜNÜYORSA
+--------------------------------------------------------------------------------
+
+  npm run deploy-commands
+
+.env içinde DISCORD_GUILD_ID tanımlı olsun. Deploy sonrası Discord’u yenileyin (Ctrl+R).
+
+
+================================================================================
