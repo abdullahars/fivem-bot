@@ -1,3 +1,6 @@
+# SORUNUZ OLURSA DİSCORD: apozinyo
+# 50 star a tam donanımlı guardı da veririm
+
 # 🎮 FiveM Discord Yönetim Botu
 
 Modern Discord v2 embed sistemi ile geliştirilmiş, FiveM sunucuları için kapsamlı yönetim ve istatistik botu.
