@@ -12,6 +12,23 @@
 [Özellikler](#-özellikler) · [Kurulum](#-kurulum) · [Yapılandırma](#%EF%B8%8F-yapılandırma) · [Komutlar](#-komutlar) · [Sistemler](#-sistemler) · [Proje Yapısı](#-proje-yapısı)
 
 </div>
+---
+
+## 🤝 Katkı ve Destek
+
+Hata bildirimi ve öneriler için [Issues](../../issues) bölümünü kullanabilirsiniz.
+
+Projeyi faydalı bulduysanız ⭐ vermeyi unutmayın. **50 ⭐'a ulaşıldığında**, tam koruma ve rol yedekleme (backup) özelliklerini içeren guard projesi de paylaşılacaktır.
+
+## 📄 Lisans
+
+Bu proje [MIT](LICENSE) lisansı ile lisanslanmıştır.
+
+## 📞 İletişim
+
+Discord: **apozinyo**
+
+
 
 ---
 
@@ -317,23 +334,7 @@ test_fivem_bots/
 
 - Hassas bilgiler yalnızca `.env` dosyasında tutulur ve `.gitignore` ile repoya dahil edilmez.
 - Yetki kontrolü her komutta ayrı ayrı yapılır.
-- MongoDB bağlantısı ortam değişkeni üzerinden yapılandırılır.
 
-## 🤝 Katkı ve Destek
-
-Hata bildirimi ve öneriler için [Issues](../../issues) bölümünü kullanabilirsiniz.
-
-Projeyi faydalı bulduysanız ⭐ vermeyi unutmayın. **50 ⭐'a ulaşıldığında**, tam koruma ve rol yedekleme (backup) özelliklerini içeren guard projesi de paylaşılacaktır.
-
-## 📄 Lisans
-
-Bu proje [MIT](LICENSE) lisansı ile lisanslanmıştır.
-
-## 📞 İletişim
-
-Discord: **apozinyo**
-
----
 
 <div align="center">
 <sub>Discord.js v14 ve Components v2 ile geliştirilmiştir.</sub>
