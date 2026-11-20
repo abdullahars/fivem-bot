@@ -16,7 +16,7 @@
 
 ## 🤝 Katkı ve Destek
 
-Hata bildirimi ve öneriler için [Issues](../../issues) bölümünü kullanabilirsiniz.
+Hata bildirimi ve öneriler için discord: apozinyo bölümünü kullanabilirsiniz.
 
 Projeyi faydalı bulduysanız ⭐ vermeyi unutmayın. **50 ⭐'a ulaşıldığında**, tam koruma ve rol yedekleme (backup) özelliklerini içeren guard projesi de paylaşılacaktır.
 
