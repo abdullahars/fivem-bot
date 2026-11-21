@@ -53,7 +53,7 @@ Bu bot, Discord.js v14 ve modern **Components v2** arayüzü ile geliştirilmiş
 ### Gereksinimler
 
 - [Node.js](https://nodejs.org/) v18 veya üzeri
-- [MongoDB](https://www.mongodb.com/) (yerel veya Atlas)
+- Veritabanı (SQLite) (yerel veya Atlas)
 - Bir [Discord Bot Token](https://discord.com/developers/applications)
 
 ### Adımlar
@@ -76,7 +76,6 @@ cp .env.example .env
 DISCORD_TOKEN=your_bot_token
 DISCORD_CLIENT_ID=your_client_id
 DISCORD_GUILD_ID=your_guild_id
-MONGODB_URI=mongodb://localhost:27017/fivem_bot
 ```
 
 Ardından `config/config.json` dosyasını sunucunuza göre doldurun ([Yapılandırma](#%EF%B8%8F-yapılandırma)) ve botu başlatın:
